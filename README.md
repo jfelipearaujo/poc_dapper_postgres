@@ -15,7 +15,7 @@ Installed packages:
  - SqlKata (2.3.7)
  - SqlKata.Execution (2.3.7)
 
-When executed, the application creates a container with postegres running and when it finishes, it destroys the container.
+When executed, the application creates a container running postegres and when it finishes, it destroys the container.
 
 This example includes:
 
