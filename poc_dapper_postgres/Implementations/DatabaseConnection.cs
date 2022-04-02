@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Threading.Tasks;
 
 using Dapper;
@@ -53,7 +54,7 @@ namespace poc_dapper_postgres.Implementations
 
         public async Task<ulong> BulkInsert<T>(PostgreSQLCopyHelper<T> copyHelper, IEnumerable<T> entities)
         {
-            if (connection.State != System.Data.ConnectionState.Open)
+            if (connection.State != ConnectionState.Open)
             {
                 await connection.OpenAsync();
             }
