@@ -28,7 +28,7 @@ This example includes:
 - Update
 - Delete
 
-Timing example of bulk insert
+Example of bulk insert runtimes:
 
 | Num of items | Total time |
 | ------------ | ---------- |
