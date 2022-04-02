@@ -1,4 +1,4 @@
-# poc_dapper_postgres
+# PoC: Dapper + Postgres
 
 This repository is an example of a reusable code using Dapper and Postgres
 
