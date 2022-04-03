@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 using poc_dapper_postgres.Implementations;
 using poc_dapper_postgres.Interfaces;
+using poc_dapper_postgres.Queries.Implementations;
+using poc_dapper_postgres.Queries.Interfaces;
 
 namespace poc_dapper_postgres
 {
@@ -16,6 +18,8 @@ namespace poc_dapper_postgres
             services.AddTransient<ITestService, TestService>();
             services.AddTransient<IDatabaseConnectionFactory, DatabaseConnectionFactory>();
             services.AddTransient<IContainerDatabaseService, ContainerDatabaseService>();
+            services.AddTransient<ITestModelQueryBuilder, TestModelQueryBuilder>();
+            services.AddTransient<ITestParentModelQueryBuilder, TestParentModelQueryBuilder>();
 
             var provider = services.BuildServiceProvider();
 
